@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+.form-holder {
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+.form-holder .form-content {
+    text-align: center;
+    align-items: center;
+    padding: 30px; 
+  
+}
+
+.form-content .form-items {
+    border: 3px solid #140a25;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.form-content h3 {
+    color: #000000;
+    font-size: 24px; 
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 20px; 
+}
+
+.form-content input[type=text], 
+.form-content input[type=password], 
+.form-content input[type=email], 
+.form-content select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    background-color: #f5f3f3;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #151617;
+    border: 0;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    background-color: #495056;
+}
+
+.invalid-feedback {
+    color: #ff606e;
+}
+
+.valid-feedback {
+    color: #2acc80;
+}
+
+
+@media (max-width: 768px) {
+    .form-holder {
+        padding: 10px; 
+    }
+
+    .form-content .form-items {
+        padding: 20px; 
+    }
+
+    .form-content h3 {
+        font-size: 20px; 
+    }
+
+    .form-content p {
+        font-size: 14px;
+    }
+
+    .form-content input[type=text], 
+    .form-content input[type=password], 
+    .form-content input[type=email], 
+    .form-content select {
+        font-size: 14px; 
+        padding: 10px;
+    }
+}
+@media (min-width: 992px) { 
+    .form-content .form-items {
+        width: 100%; 
+    }
+}
